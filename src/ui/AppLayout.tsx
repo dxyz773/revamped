@@ -1,10 +1,10 @@
-import ThemeToggle from "../features/theme/ThemeToggle";
+import Header from "./Header";
 
 function AppLayout() {
   return (
-    <main>
+    <main className="h-screen">
+      <Header />
       <p>Main</p>
-      <ThemeToggle />
     </main>
   );
 }
