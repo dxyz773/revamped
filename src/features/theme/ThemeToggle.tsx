@@ -1,4 +1,4 @@
-import { moon, sun } from "./ThemeToggleIcons";
+import { moon, sun } from "../../ui/Icons";
 import { useTheme } from "./useTheme";
 
 function ThemeToggle() {
@@ -6,6 +6,7 @@ function ThemeToggle() {
 
   return (
     <button
+      className="hover:rotate-[35deg] transition-all ease-in-out absolute lg:fixed top-8 right-8"
       onClick={(e) => {
         e.preventDefault();
         localStorage.setItem(

@@ -1,11 +1,12 @@
-import Header from "./Header";
+import Resume from "../features/resume/Resume";
+import Sidebar from "../features/sidebar/Sidebar";
 
 function AppLayout() {
   return (
-    <main className="h-screen">
-      <Header />
-      <p>Main</p>
-    </main>
+    <div className="px-8 relative flex flex-col lg:flex-row gap-8">
+      <Sidebar />
+      <Resume />
+    </div>
   );
 }
 
