@@ -1,13 +1,15 @@
+import { github } from "../../ui/Icons";
 import NonThemeIconToggle from "../../ui/NonThemeIconToggle";
 import SidebarHeader from "./SidebarHeader";
 import SidebarNavList from "./SidebarNavList";
 
 function Sidebar() {
   return (
-    <div className="lg:fixed lg:w-[45%] h-auto lg:h-screen">
+    <div className="lg:fixed lg:w-[49%] h-auto lg:h-screen">
       <NonThemeIconToggle />
       <SidebarHeader />
       <SidebarNavList />
+      <span>{github}</span>
     </div>
   );
 }
