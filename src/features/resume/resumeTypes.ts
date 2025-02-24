@@ -11,6 +11,7 @@ export type ResumeEntry = {
   website: string;
   img: string;
   video: string;
+  order: number;
 };
 
 export type Resume = ResumeEntry[];

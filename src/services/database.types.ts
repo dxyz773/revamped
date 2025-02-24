@@ -42,6 +42,7 @@ export type Database = {
           github: string | null;
           id: number;
           img: string | null;
+          order: number | null;
           organization: string | null;
           section: string | null;
           textContent: string | null;
@@ -56,6 +57,7 @@ export type Database = {
           github?: string | null;
           id?: number;
           img?: string | null;
+          order?: number | null;
           organization?: string | null;
           section?: string | null;
           textContent?: string | null;
@@ -70,6 +72,7 @@ export type Database = {
           github?: string | null;
           id?: number;
           img?: string | null;
+          order?: number | null;
           organization?: string | null;
           section?: string | null;
           textContent?: string | null;
