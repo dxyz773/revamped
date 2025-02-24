@@ -51,6 +51,7 @@ function ResumeList() {
           </h2>
           {resume
             .filter((curr) => curr.section === section)
+            .sort((a, b) => a.order - b.order)
             .map((entry) => (
               <ResumeEntryElement key={entry.id} entry={entry} />
             ))}

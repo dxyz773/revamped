@@ -15,7 +15,10 @@ function ResumeEntryElement({ entry }: ResumeProps) {
     website,
     img,
     video,
+    order,
   } = entry;
+
+  console.log(order);
   return (
     <div className="mb-5 max-w-[37.5rem]">
       <p className="text-xs uppercase mb-1 text-neutral-400">{date}</p>
