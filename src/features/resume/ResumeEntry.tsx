@@ -15,20 +15,18 @@ function ResumeEntryElement({ entry }: ResumeProps) {
     website,
     img,
     video,
-    order,
   } = entry;
 
-  console.log(order);
   return (
-    <div className="mb-5 max-w-[37.5rem]">
-      <p className="text-xs uppercase mb-1 text-neutral-400">{date}</p>
+    <div className="mb-5 dark:hover:bg-[#151414] px-8 py-5 rounded-md shadow-2xl">
+      <p className="text-sm uppercase mb-1 text-neutral-400">{date}</p>
 
-      <div className="flex gap-2">
-        <header className="dark:font-semibold capitalize font-bold dark:text-lime-400">
+      <div className="flex gap-2 flex-wrap sm:flex-nowrap">
+        <header className="dark:font-semibold text-lg capitalize font-bold dark:text-lime-400">
           {title}
         </header>
-        <div className="flex gap-2 items-center">
-          <p className="text-neutral-300 text-sm self-end ">{organization}</p>
+        <div className="flex gap-2 items-end">
+          <p className="text-neutral-100 text-md">{organization}</p>
           <div className="flex gap-1 ">
             {github ? (
               <a
@@ -61,7 +59,9 @@ function ResumeEntryElement({ entry }: ResumeProps) {
         </div>
       </div>
       {descriptor ? (
-        <p className="text-sm text-neutral-400 mt-1">{entry.descriptor}</p>
+        <p className="text-sm text-[#e5e5e5] mt-1 tracking-wider">
+          {entry.descriptor}
+        </p>
       ) : null}
       {video && (
         <div className="flex">
@@ -78,7 +78,9 @@ function ResumeEntryElement({ entry }: ResumeProps) {
         </div>
       )}
 
-      {textContent ? <p className="mt-4">{entry.textContent}</p> : null}
+      {textContent ? (
+        <p className="mt-4 tracking-wider">{entry.textContent}</p>
+      ) : null}
     </div>
   );
 }

@@ -7,9 +7,11 @@ function Sidebar() {
   return (
     <div className="lg:fixed lg:w-[49%] h-auto lg:h-screen">
       <NonThemeIconToggle />
-      <SidebarHeader />
-      <SidebarNavList />
-      <span>{github}</span>
+      <div className="px-8">
+        <SidebarHeader />
+        <SidebarNavList />
+        <span>{github}</span>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import Footer from "../../ui/Footer";
 import ThemeToggle from "../theme/ThemeToggle";
 import ResumeBio from "./ResumeBio";
 import ResumeList from "./ResumeList";
@@ -11,6 +12,7 @@ function Resume() {
         <ul className="flex flex-col gap-20">
           <ResumeList />
         </ul>
+        <Footer />
       </div>
     </>
   );
