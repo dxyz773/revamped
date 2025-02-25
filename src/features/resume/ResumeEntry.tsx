@@ -18,10 +18,10 @@ function ResumeEntryElement({ entry }: ResumeProps) {
   } = entry;
 
   return (
-    <div className="mb-5 dark:hover:bg-[#151414] px-8 py-5 rounded-md shadow-2xl">
+    <div className="mb-5 dark:hover:bg-[#151414] px-8 py-5 rounded-md shadow-2xl transition-all ease-in-out">
       <p className="text-sm uppercase mb-1 text-neutral-400">{date}</p>
 
-      <div className="flex gap-2 flex-wrap sm:flex-nowrap">
+      <div className="flex gap-2 flex-wrap">
         <header className="dark:font-semibold text-lg capitalize font-bold dark:text-lime-400">
           {title}
         </header>
@@ -69,8 +69,8 @@ function ResumeEntryElement({ entry }: ResumeProps) {
             id="video"
             className="mt-5 mb-5 rounded-md shadow-xl"
             src={video}
-            width="750"
-            height="500"
+            // width="750"
+            // height="500"
             autoPlay={true}
             muted={true}
             loop={true}

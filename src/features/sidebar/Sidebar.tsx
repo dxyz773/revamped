@@ -1,4 +1,4 @@
-import { github } from "../../ui/Icons";
+import { github } from "../../ui/NonPhosphorIcons";
 import NonThemeIconToggle from "../../ui/NonThemeIconToggle";
 import SidebarHeader from "./SidebarHeader";
 import SidebarNavList from "./SidebarNavList";

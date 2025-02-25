@@ -17,7 +17,7 @@ function SidebarNavList() {
               href={`#${section.name.split(" ").join("-").toLowerCase()}`}
               className="flex gap-2 dark:text-[#eeeae3] text-[#181717] dark:hover:text-[#84cc16]"
             >
-              <span className="hover:translate-x-2.5 transition ease-in-out dark:hover:translate-none">
+              <span className="hover:translate-x-2.5 transition ease-in-out dark:hover:translate-none tracking-wide">
                 {section.name.toUpperCase()}
               </span>
             </a>

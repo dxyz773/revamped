@@ -14,16 +14,12 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   useEffect(() => {
     if (!("color-theme" in localStorage)) {
       if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        console.log("dark");
-
         localStorage.setItem("color-theme", "dark");
         document.documentElement.attributes.getNamedItem(
           "data-theme"
         )!.textContent = "dark";
         setIsDark(true);
       } else {
-        console.log("light");
-
         localStorage.setItem("color-theme", "light");
         document.documentElement.attributes.getNamedItem(
           "data-theme"

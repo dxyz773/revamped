@@ -1,4 +1,4 @@
-import { moon, sun } from "../../ui/Icons";
+import { moon, sun } from "../../ui/NonPhosphorIcons";
 import { useTheme } from "./useTheme";
 
 function ThemeToggle() {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { star, spaceShip } from "./Icons";
+import { star, spaceShip } from "./NonPhosphorIcons";
 
 function NonThemeIconToggle() {
   const [iconToggle, setIconToggle] = useState(true);
