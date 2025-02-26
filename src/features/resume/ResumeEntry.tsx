@@ -18,15 +18,17 @@ function ResumeEntryElement({ entry }: ResumeProps) {
   } = entry;
 
   return (
-    <div className="mb-5 dark:hover:bg-[#151414] px-8 py-5 rounded-md shadow-2xl transition-all ease-in-out">
-      <p className="text-sm uppercase mb-1 text-neutral-400">{date}</p>
+    <div className="mb-2 dark:hover:bg-[#151414] hover:bg-neutral-[#fff] px-8 py-5 rounded-md hover:shadow-2xl hover:transition-all dark:ease-in-out hover:border-neutral-100">
+      <p className="text-sm uppercase mb-1 dark:text-neutral-400 pt-2">
+        {date}
+      </p>
 
       <div className="flex gap-2 flex-wrap">
         <header className="dark:font-semibold text-lg capitalize font-bold dark:text-lime-400">
           {title}
         </header>
         <div className="flex gap-2 items-end">
-          <p className="text-neutral-100 text-md">{organization}</p>
+          <p className="dark:text-neutral-100 text-md">{organization}</p>
           <div className="flex gap-1 ">
             {github ? (
               <a
@@ -59,7 +61,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
         </div>
       </div>
       {descriptor ? (
-        <p className="text-sm text-[#e5e5e5] mt-1 tracking-wider">
+        <p className="text-sm dark:text-[#e5e5e5] mt-1 tracking-wider">
           {entry.descriptor}
         </p>
       ) : null}
@@ -67,10 +69,8 @@ function ResumeEntryElement({ entry }: ResumeProps) {
         <div className="flex">
           <video
             id="video"
-            className="mt-5 mb-5 rounded-md shadow-xl"
+            className="mt-5 mb-5 dark:rounded-sm shadow-xl"
             src={video}
-            // width="750"
-            // height="500"
             autoPlay={true}
             muted={true}
             loop={true}
@@ -79,7 +79,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
       )}
 
       {textContent ? (
-        <p className="mt-4 tracking-wider">{entry.textContent}</p>
+        <p className="mt-4 tracking-wider leading-7">{entry.textContent}</p>
       ) : null}
     </div>
   );

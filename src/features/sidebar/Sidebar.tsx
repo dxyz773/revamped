@@ -1,5 +1,5 @@
-import { github } from "../../ui/NonPhosphorIcons";
 import NonThemeIconToggle from "../../ui/NonThemeIconToggle";
+import SocialMediaLinkList from "../../ui/SocialMediaLinkList";
 import SidebarHeader from "./SidebarHeader";
 import SidebarNavList from "./SidebarNavList";
 
@@ -10,7 +10,7 @@ function Sidebar() {
       <div className="px-8">
         <SidebarHeader />
         <SidebarNavList />
-        <span>{github}</span>
+        <SocialMediaLinkList />
       </div>
     </div>
   );

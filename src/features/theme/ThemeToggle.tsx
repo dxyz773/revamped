@@ -6,7 +6,7 @@ function ThemeToggle() {
 
   return (
     <button
-      className="hover:rotate-[35deg] transition-all ease-in-out absolute lg:fixed top-8 right-8"
+      className="hover:rotate-[35deg] transition-all ease-in-out absolute lg:fixed top-8 right-8 rounded-full bg-radial-[at_25%_25%] from-white to-zinc-900 to-75% p-1"
       onClick={(e) => {
         e.preventDefault();
         localStorage.setItem(
