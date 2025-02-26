@@ -44,9 +44,10 @@ function ResumeList() {
         <section
           key={section}
           id={section.split(" ").join("-")}
-          className="flex flex-col gap-5 scroll-m-24 tracking-wide"
+          className="flex flex-col scroll-m-24 gap-2 tracking-wide
+           border-neutral-300 border-b dark:border-neutral-800 mt-5"
         >
-          <h2 className="uppercase pb-5 font-bold dark:font-normal">
+          <h2 className="capitalize tracking-wider font-stretch-expanded text-lg px-8 mb-5 dark:font-[400] font-bold">
             {section}
           </h2>
           {resume
