@@ -22,7 +22,7 @@ function ResumeBio() {
           </svg>
         </a>
       </header>
-      <div className="py-5 dark:hover:bg-[#151414] px-8 flex flex-col gap-4 tracking-wider leading-7 rounded-md dark:hover:shadow-2xl dark:hover:transition-all dark:ease-in-out hover:border-neutral-100">
+      <div className="py-5 dark:hover:bg-[#111827] px-8 flex flex-col gap-4 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:border-neutral-100  hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">
         <p>
           My path to software development wasn’t traditional, but that’s what
           makes it exciting. With a background in psychology and a decade in
