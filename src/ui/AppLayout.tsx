@@ -3,7 +3,7 @@ import Sidebar from "../features/sidebar/Sidebar";
 
 function AppLayout() {
   return (
-    <div className="px-12 relative flex flex-col lg:flex-row gap-8 pb-10 lg:gap-10">
+    <div className="px-5 sm:px-12 relative flex flex-col lg:flex-row gap-8 pb-10 lg:gap-10">
       <Sidebar />
       <Resume />
     </div>

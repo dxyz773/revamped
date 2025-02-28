@@ -8,6 +8,12 @@ function ResumeList() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState<string | null>(null);
 
+  const loadingArr = [
+    "projects",
+    "experience before tech",
+    "education",
+    "volunteer",
+  ];
   useEffect(() => {
     async function getData() {
       setIsLoading(true);
@@ -31,11 +37,37 @@ function ResumeList() {
   const sections = [...sectionList];
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return (
+      <>
+        {loadingArr.map((section) => (
+          <section
+            key={`${section} ${1}`}
+            className="flex flex-col scroll-m-24 gap-2 mt-5"
+          >
+            <h2 className="capitalize tracking-wider font-stretch-expanded text-lg px-8 mb-5 dark:font-[400] font-bold">
+              {section}
+            </h2>
+            <p>Loading...</p>
+          </section>
+        ))}
+      </>
+    );
   }
 
   if (isError) {
-    return <p>Error: {isError}</p>;
+    return (
+      <div>
+        <p className="mb-2 dark:hover:bg-[#111827] px-8 py-5 rounded-md  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">
+          <span className="text-red-600">Error!</span> Failed to load resume
+          data. Please download resume via pdf link in
+          <a className="dark:hover:text-[#84cc16]" href="#about-me">
+            {" "}
+            About Me
+          </a>{" "}
+          section above.
+        </p>
+      </div>
+    );
   }
 
   return (

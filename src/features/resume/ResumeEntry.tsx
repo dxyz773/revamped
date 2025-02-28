@@ -18,7 +18,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
   } = entry;
 
   return (
-    <div className="mb-2 dark:hover:bg-[#151414] px-8 py-5 rounded-md  hover:transition-all dark:ease-in-out dark:shadow-xl">
+    <div className="mb-2 dark:hover:bg-[#111827] px-8 py-5 rounded-md  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">
       <p className="text-sm uppercase mb-1 dark:text-neutral-400 pt-2">
         {date}
       </p>
