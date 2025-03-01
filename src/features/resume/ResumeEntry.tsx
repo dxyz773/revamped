@@ -1,3 +1,4 @@
+import { useScreenSize } from "../../hooks/useScreenSize";
 import { type ResumeEntry } from "./resumeTypes";
 
 interface ResumeProps {
@@ -5,6 +6,8 @@ interface ResumeProps {
 }
 
 function ResumeEntryElement({ entry }: ResumeProps) {
+  const screenSize = useScreenSize();
+  console.log(screenSize.width);
   const {
     date,
     title,
@@ -16,6 +19,11 @@ function ResumeEntryElement({ entry }: ResumeProps) {
     img,
     video,
   } = entry;
+
+  const hasThumbnailForSmScreen =
+    title.toLowerCase() === "petite leaf" ||
+    title.toLowerCase() === "camp retro" ||
+    title.toLowerCase() === "actor";
 
   return (
     <div className="mb-2 dark:hover:bg-[#111827] px-8 py-5 rounded-md  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">
@@ -64,7 +72,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
                 </svg>
               </a>
             ) : null}
-            {img ? (
+            {!hasThumbnailForSmScreen && img ? (
               <a
                 href={img}
                 target="_blank"
@@ -89,7 +97,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
           {entry.descriptor}
         </p>
       ) : null}
-      {video && (
+      {video && screenSize.width >= 500 ? (
         <div className="flex">
           <video
             id="video"
@@ -100,7 +108,9 @@ function ResumeEntryElement({ entry }: ResumeProps) {
             loop={true}
           ></video>
         </div>
-      )}
+      ) : video ? (
+        <img src={img} className="mt-5 mb-5 dark:rounded-sm shadow-xl" />
+      ) : null}
 
       {textContent ? (
         <p className="mt-4 tracking-wider leading-7">{entry.textContent}</p>
