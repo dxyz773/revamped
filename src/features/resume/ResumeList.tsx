@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getResume } from "../../services/resumeAPI";
 import { Resume } from "./resumeTypes";
 import ResumeEntryElement from "./ResumeEntry";
+import Loader from "../../ui/Loader";
 
 function ResumeList() {
   const [resume, setResume] = useState<Resume>([]);
@@ -47,7 +48,7 @@ function ResumeList() {
             <h2 className="capitalize tracking-wider font-stretch-expanded text-lg px-8 mb-5 dark:font-[400] font-bold">
               {section}
             </h2>
-            <p>Loading...</p>
+            <Loader />
           </section>
         ))}
       </>
