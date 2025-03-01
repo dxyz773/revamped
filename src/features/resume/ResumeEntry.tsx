@@ -7,7 +7,7 @@ interface ResumeProps {
 
 function ResumeEntryElement({ entry }: ResumeProps) {
   const screenSize = useScreenSize();
-  console.log(screenSize.width);
+
   const {
     date,
     title,
