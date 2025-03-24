@@ -34,9 +34,6 @@ function ResumeList() {
     getData();
   }, []);
 
-  const sectionList = new Set(resume.map((el) => el.section));
-  const sections = [...sectionList];
-
   if (isLoading) {
     return (
       <>
@@ -73,7 +70,7 @@ function ResumeList() {
 
   return (
     <>
-      {sections.map((section) => (
+      {loadingArr.map((section) => (
         <section
           key={section}
           id={section.split(" ").join("-")}
