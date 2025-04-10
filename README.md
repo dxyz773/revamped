@@ -11,7 +11,7 @@
 
 ## Overview
 
-Welcome to my web developer <a href="https://demitry-edwards.vercel.app/"> portfolio</a>. This is a responsive web application that showcases my personal projects, previous work, and volunteer experience. Built with modern web technologies, this portfolio highlights my technical and design skills through an interactive user interface.
+Welcome to my web developer <a href="https://demitry-edwards.vercel.app/" target="_blank"> portfolio</a>. This is a responsive web application that showcases my personal projects, previous work, and volunteer experience. Built with modern web technologies, this portfolio highlights my technical and design skills through an interactive user interface.
 
 ## Tech Stack
 
