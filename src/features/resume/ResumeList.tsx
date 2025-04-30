@@ -9,12 +9,8 @@ function ResumeList() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState<string | null>(null);
 
-  const loadingArr = [
-    "projects",
-    "experience before tech",
-    "education",
-    "volunteer",
-  ];
+  const loadingArr = ["projects", "experience before tech", "education"];
+
   useEffect(() => {
     async function getData() {
       setIsLoading(true);
