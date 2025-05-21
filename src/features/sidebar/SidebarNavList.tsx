@@ -9,7 +9,7 @@ function SidebarNavList() {
   ];
   return (
     <nav>
-      <ul className="flex flex-col gap-2 mt-8">
+      <ul className="flex flex-col gap-2 mt-14">
         {resumeSections.map((section) => (
           <li key={section.name} className="w-max">
             <a

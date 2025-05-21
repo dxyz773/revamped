@@ -1,11 +1,14 @@
+import resumeBioData from "./ResumeBioData";
+
 function ResumeBio() {
+
   return (
     <section
       id="about-me"
-      className="flex flex-col gap-4 scroll-m-24 mb-5 border-neutral-200 border-b border-t lg:border-t-0 dark:border-neutral-800 mt-5 pt-10 lg:pt-0"
+      className="flex flex-col gap-4 scroll-m-24 mb-5 border-neutral-200 border-b dark:border-neutral-800 pt-10 lg:p-2 lg:pt-0"
     >
       <header className="uppercase px-8 tracking-wider font-stretch-expanded dark:font-[400] font-bold flex gap-4 items-center">
-        <span> About Me</span>
+        <span>About Me</span>
         <a
           href="/DemitryEdwardsResume.pdf"
           download="DemitryEdwardsResume"
@@ -22,8 +25,8 @@ function ResumeBio() {
           </svg>
         </a>
       </header>
-      <div className="py-5 dark:hover:bg-[#111827] px-8 flex flex-col gap-4 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:border-neutral-100  hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">
-        <p>
+      <div className="mt-2 py-5 pt-8 dark:hover:bg-[#111827] px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:border-neutral-100  hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">{resumeBioData.map(curr => <div className="flex flex-col gap-2" key={curr.title}><div className="flex gap-2.5"><span>{curr.icon}</span><p>{curr.title}</p></div><p>{curr.description}</p></div>)}
+        {/* <p>
           My path to software development wasn’t traditional, but that’s what
           makes it exciting. With a background in psychology and a decade in
           acting, I’ve always been drawn to{" "}
@@ -60,7 +63,7 @@ function ResumeBio() {
           </span>
           go hand in hand. My journey has been anything but linear, but that’s
           exactly what makes it mine.
-        </p>
+        </p> */}
       </div>
     </section>
   );
