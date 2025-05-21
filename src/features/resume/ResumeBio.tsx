@@ -1,8 +1,9 @@
 function ResumeBio() {
+  const about:{title:string,description:string, icon:React.ReactElement}[]=[{title:"Innovator", description:"I love finding creative, human-centered solutions—whether I’m designing an app or debugging a tricky function, I bring fresh ideas to the table.",icon:<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 256 256"><path d="M224,112H200a8,8,0,0,0,0,16h15.64A88.15,88.15,0,0,1,136,207.63V95a32,32,0,1,0-16,0V207.63A88.15,88.15,0,0,1,40.36,128H56a8,8,0,0,0,0-16H32a8,8,0,0,0-8,8,104,104,0,0,0,208,0A8,8,0,0,0,224,112ZM112,64a16,16,0,1,1,16,16A16,16,0,0,1,112,64Z"></path></svg>},{title:"Adaptable", description:"My path to tech wasn’t linear, and that’s my strength—I pivot quickly, learn fast, and thrive in dynamic, ever-changing environments.",icon:<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 256 256"><path d="M237.2,151.87v0a47.1,47.1,0,0,0-2.35-5.45L193.26,51.8a7.82,7.82,0,0,0-1.66-2.44,32,32,0,0,0-45.26,0A8,8,0,0,0,144,55V80H112V55a8,8,0,0,0-2.34-5.66,32,32,0,0,0-45.26,0,7.82,7.82,0,0,0-1.66,2.44L21.15,146.4a47.1,47.1,0,0,0-2.35,5.45v0A48,48,0,1,0,112,168V96h32v72a48,48,0,1,0,93.2-16.13ZM76.71,59.75a16,16,0,0,1,19.29-1v73.51a47.9,47.9,0,0,0-46.79-9.92ZM64,200a32,32,0,1,1,32-32A32,32,0,0,1,64,200ZM160,58.74a16,16,0,0,1,19.29,1l27.5,62.58A47.9,47.9,0,0,0,160,132.25ZM192,200a32,32,0,1,1,32-32A32,32,0,0,1,192,200Z"></path></svg>}]
   return (
     <section
       id="about-me"
-      className="flex flex-col gap-4 scroll-m-24 mb-5 border-neutral-200 border-b border-t lg:border-t-0 dark:border-neutral-800 mt-5 pt-10 lg:pt-0"
+      className="flex flex-col gap-4 scroll-m-24 mb-5 border-neutral-200 border-b dark:border-neutral-800 lg:pt-0"
     >
       <header className="uppercase px-8 tracking-wider font-stretch-expanded dark:font-[400] font-bold flex gap-4 items-center">
         <span> About Me</span>
@@ -22,8 +23,8 @@ function ResumeBio() {
           </svg>
         </a>
       </header>
-      <div className="py-5 dark:hover:bg-[#111827] px-8 flex flex-col gap-4 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:border-neutral-100  hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">
-        <p>
+      <div className="py-5 dark:hover:bg-[#111827] px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:border-neutral-100  hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">{about.map(curr => <div className="flex flex-col gap-2" key={curr.title}><div className="flex gap-2.5"><span>{curr.icon}</span><p>{curr.title}</p></div><p>{curr.description}</p></div>)}
+        {/* <p>
           My path to software development wasn’t traditional, but that’s what
           makes it exciting. With a background in psychology and a decade in
           acting, I’ve always been drawn to{" "}
@@ -60,7 +61,7 @@ function ResumeBio() {
           </span>
           go hand in hand. My journey has been anything but linear, but that’s
           exactly what makes it mine.
-        </p>
+        </p> */}
       </div>
     </section>
   );
