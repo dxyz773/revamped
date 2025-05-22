@@ -1,7 +1,6 @@
 import resumeBioData from "./ResumeBioData";
 
 function ResumeBio() {
-
   return (
     <section
       id="about-me"
@@ -25,45 +24,16 @@ function ResumeBio() {
           </svg>
         </a>
       </header>
-      <div className="mt-2 py-5 pt-8 dark:hover:bg-[#111827] px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:border-neutral-100  hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">{resumeBioData.map(curr => <div className="flex flex-col gap-2" key={curr.title}><div className="flex gap-2.5"><span>{curr.icon}</span><p>{curr.title}</p></div><p>{curr.description}</p></div>)}
-        {/* <p>
-          My path to software development wasn’t traditional, but that’s what
-          makes it exciting. With a background in psychology and a decade in
-          acting, I’ve always been drawn to{" "}
-          <span className="dark:text-[#84cc16] font-bold dark:font-normal">
-            storytelling{" "}
-          </span>
-          and human connection—skills that naturally translated into coding.
-          Learning JavaScript, React, and Python opened up a whole new world
-          where I could turn ideas into interactive, beautifully designed
-          applications. From building Petite Leaf, a plant lover’s e-commerce
-          site, to creating the game-inspired Camp Retro, I’ve found so much joy
-          in crafting engaging digital spaces. Lately, I’ve been deepening my
-          expertise in{" "}
-          <span className="dark:text-[#84cc16] font-bold dark:font-normal">
-            TypeScript, SQL, and NoSQL
-          </span>{" "}
-          databases to make my applications even more scalable and efficient.
-        </p>
-        <p>
-          Beyond coding,{" "}
-          <span className="dark:text-[#84cc16] font-bold dark:font-normal">
-            collaboration{" "}
-          </span>
-          is what drives me. I love working with diverse teams, solving
-          challenges together, and bringing projects to life. Leading Mind
-          Matters for the Women Who Code Hackathon was a defining moment—I
-          wasn’t just coding; I was guiding a remote team, managing schedules,
-          and debugging through pair programming. It reminded me of my theater
-          days, where every moving part needed to come together for a great
-          performance. Whether supporting fellow developers, conducting code
-          reviews, or brainstorming solutions, I thrive in spaces where{" "}
-          <span className="dark:text-[#84cc16] font-bold dark:font-normal">
-            creativity and teamwork{" "}
-          </span>
-          go hand in hand. My journey has been anything but linear, but that’s
-          exactly what makes it mine.
-        </p> */}
+      <div className="mt-2 py-5 pt-8 dark:hover:bg-[#111827] px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:border-neutral-100  hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">
+        {resumeBioData.map((curr) => (
+          <div className="flex flex-col gap-2" key={curr.title}>
+            <div className="flex gap-2.5">
+              <span>{curr.icon}</span>
+              <p>{curr.title}</p>
+            </div>
+            <p>{curr.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
