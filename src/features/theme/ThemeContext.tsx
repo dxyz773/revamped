@@ -1,8 +1,8 @@
-import { createContext } from "react";
-import { ThemeProviderState } from "./themeContextTypes";
+// import { createContext } from "react";
+// import { ThemeProviderState } from "./themeContextTypes";
 
-const ThemeProviderContext = createContext<ThemeProviderState | undefined>(
-  undefined
-);
+// const ThemeProviderContext = createContext<ThemeProviderState | undefined>(
+//   undefined
+// );
 
-export default ThemeProviderContext;
+// export default ThemeProviderContext;

@@ -11,7 +11,7 @@
 
 ## Overview
 
-Welcome to my web developer <a href="https://demitry-edwards.vercel.app/" target="_blank"> portfolio</a>. This is a responsive web application that showcases my personal projects, previous work, and volunteer experience. Built with modern web technologies, this portfolio highlights my technical and design skills through an interactive user interface.
+Welcome to my web developer <a href="https://demitry-edwards.vercel.app/" target="_blank"> portfolio</a>. This is a responsive web application that showcases my personal projects, previous work, and volunteer experience. Built with modern web technologies, this portfolio highlights my technical and design skills through an interactive user interface. Starry Night background animation by <a href="https://github.com/Carla-Codes">Carla Codes.</a>
 
 ## Tech Stack
 
@@ -24,7 +24,6 @@ Welcome to my web developer <a href="https://demitry-edwards.vercel.app/" target
 ## Features
 
 - 🎥 **Video Project Showcase** – Interactive previews of projects in action.
-- 🌓 **Light / Dark Mode Toggle** – Seamless theme switcher for user preference.
 - 📱 **Responsive Layout** – Optimized for mobile, tablet, and desktop viewing.
 - 🧩 **Modular Components** – Clean, scalable React components for easy updates.
 
