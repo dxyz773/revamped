@@ -24,7 +24,7 @@ function ResumeBio() {
           </svg>
         </a>
       </header>
-      <div className="mt-2 py-5 pt-8 dark:hover:bg-[#111827] px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:border-neutral-100  hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">
+      <div className="mt-2 py-5 pt-8 hover:bg-[#111827] px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:shadow-[#0a0909]">
         {resumeBioData.map((curr) => (
           <div className="flex flex-col gap-2" key={curr.title}>
             <div className="flex gap-2.5">
