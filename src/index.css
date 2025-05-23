@@ -71,5 +71,5 @@ body {
 .twinkling {
   background: transparent url(twinkling.png) repeat top center;
   z-index: 1;
-  animation: move-twink-back 200s linear infinite;
+  /* animation: move-twink-back 200s linear infinite; */
 }
