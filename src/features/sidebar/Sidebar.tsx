@@ -9,7 +9,7 @@ function Sidebar() {
       <div className="lg:fixed lg:w-[49%] h-auto lg:h-screen pb-4 border-neutral-300 border-b dark:border-neutral-800 dark:text-[#d6d3cc] lg:border-0 title">
         <NonThemeIconToggle />
         {/* <div className="stars"></div> */}
-        <div className="twinkling"></div>
+        <div className="animate-twinkling"></div>
         <div className="px-8 title">
           <SidebarHeader />
           <SidebarNavList />

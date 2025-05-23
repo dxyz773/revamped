@@ -71,9 +71,9 @@ body {
 }
 
 .twinkling {
+  @apply animate-twinkling;
   position: fixed;
-  background: transparent url(twinkling.png);
+  background-image: transparent url(twinkling.png);
   background-repeat: repeat;
   z-index: 1;
-  animation: move-twinkle-back 300s linear infinite;
 }
