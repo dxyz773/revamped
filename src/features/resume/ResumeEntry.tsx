@@ -26,8 +26,8 @@ function ResumeEntryElement({ entry }: ResumeProps) {
     title.toLowerCase() === "actor";
 
   return (
-    <div className="mb-2 dark:hover:bg-[#111827] px-8 py-5 rounded-md  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">
-      <p className="text-sm uppercase mb-1 dark:text-neutral-400 pt-2">
+    <div className="mb-2  px-8 py-5 rounded-md  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909] dark:hover:bg-fuchsia-200/7">
+      <p className="text-sm uppercase mb-1 dark:text-neutral-200 pt-2">
         {date}
       </p>
 
@@ -36,7 +36,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
           {title}
         </header>
         <div className="flex gap-2 items-end">
-          <p className="dark:text-neutral-100 text-md">{organization}</p>
+          <p className="dark:text-fuchsia-50 text-md">{organization}</p>
           <div className="flex gap-1 ">
             {github ? (
               <a

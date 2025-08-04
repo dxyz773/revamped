@@ -4,14 +4,14 @@ function ResumeBio() {
   return (
     <section
       id="about-me"
-      className="flex flex-col gap-4 scroll-m-24 mb-5 border-neutral-200 border-b dark:border-neutral-800 pt-10 lg:p-2 lg:pt-0"
+      className="flex flex-col gap-4 scroll-m-24 mb-5 border-neutral-200 pt-10 lg:p-2 lg:pt-0"
     >
       <header className="uppercase px-8 tracking-wider font-stretch-expanded dark:font-[400] font-bold flex gap-4 items-center">
         <span>About Me</span>
         <a
           href="/DemitryEdwardsResume.pdf"
           download="DemitryEdwardsResume"
-          className="dark:fill-neutral-400 dark:hover:fill-[#84cc16] fill-[#000] hover:scale-90 dark:hover:scale-100"
+          className="dark:fill-neutral-400 dark:hover:fill-fuchsia-400 hover:scale-90 dark:hover:scale-100"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,9 +24,9 @@ function ResumeBio() {
           </svg>
         </a>
       </header>
-      <div className="mt-2 py-5 pt-8 hover:bg-[#111827] px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:shadow-[#0a0909]">
+      <div className="mt-2 py-5 pt-8  px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:shadow-[#0a0909] dark:bg-fuchsia-200/7">
         {resumeBioData.map((curr) => (
-          <div className="flex flex-col gap-2" key={curr.title}>
+          <div className="flex flex-col gap-2 text-[#fff]" key={curr.title}>
             <div className="flex gap-2.5">
               <span>{curr.icon}</span>
               <p>{curr.title}</p>

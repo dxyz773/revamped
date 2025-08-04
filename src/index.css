@@ -62,14 +62,3 @@ body {
   height: 100%;
   display: block;
 }
-
-.stars {
-  background: #000 url(stars.png) repeat top center;
-  z-index: 1;
-}
-
-.twinkling {
-  background: transparent url(twinkling.png) repeat top center;
-  z-index: 2;
-  /* animation: move-twink-back 200s linear infinite; */
-}
