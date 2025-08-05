@@ -1,4 +1,4 @@
-import { useScreenSize } from "../../hooks/useScreenSize";
+import { isMobile } from "../../helpers/isMobile";
 import { type ResumeEntry } from "./resumeTypes";
 
 interface ResumeProps {
@@ -6,7 +6,7 @@ interface ResumeProps {
 }
 
 function ResumeEntryElement({ entry }: ResumeProps) {
-  const screenSize = useScreenSize();
+  const isMobileDevice = isMobile();
 
   const {
     date,
@@ -26,7 +26,11 @@ function ResumeEntryElement({ entry }: ResumeProps) {
     title.toLowerCase() === "actor";
 
   return (
-    <div className="mb-2  px-8 py-5 rounded-md  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909] dark:hover:bg-fuchsia-200/7">
+    <div
+      className={`mb-2  px-8 py-5 rounded-md  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909] dark:hover:bg-fuchsia-200/7 ${
+        isMobileDevice && "dark:bg-fuchsia-200/7"
+      }`}
+    >
       <p className="text-sm uppercase mb-1 dark:text-neutral-200 pt-2">
         {date}
       </p>
@@ -97,7 +101,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
           {entry.descriptor}
         </p>
       ) : null}
-      {video && screenSize.width >= 500 ? (
+      {video && !isMobileDevice ? (
         <div className="flex">
           <video
             id="video"
