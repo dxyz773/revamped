@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-<img src="./readmeData/portfolio_screenshot.jpg">
+<img width="1282" height="730" alt="portfolio_img" src="https://github.com/user-attachments/assets/c77f50b4-c109-41a9-be07-3729d1ac5a45" />
 
 ## Table of Contents
 
