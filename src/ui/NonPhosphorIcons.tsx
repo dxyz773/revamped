@@ -4,7 +4,7 @@ export const moon = (
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth={1.5}
-    stroke="#fff"
+    stroke="#dad4d4"
     className="size-6"
   >
     <path
@@ -39,7 +39,7 @@ export const star = (
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth={1.5}
-    stroke="currentColor"
+    stroke="#cdc6c6"
     className="size-6"
   >
     <path
@@ -56,7 +56,7 @@ export const spaceShip = (
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth={1.5}
-    stroke="currentColor"
+    stroke="#cdc6c6"
     className="size-6"
   >
     <path

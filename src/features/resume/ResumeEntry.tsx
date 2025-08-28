@@ -36,9 +36,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
       </p>
 
       <div className="flex gap-2 flex-wrap">
-        <header className="dark:font-semibold text-lg capitalize font-bold dark:text-lime-400">
-          {title}
-        </header>
+        <header className="dark:font-light text-xl  uppercase">{title}</header>
         <div className="flex gap-2 items-end">
           <p className="dark:text-fuchsia-50 text-md">{organization}</p>
           <div className="flex gap-1 ">

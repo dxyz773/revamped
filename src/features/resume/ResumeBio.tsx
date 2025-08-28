@@ -24,12 +24,14 @@ function ResumeBio() {
           </svg>
         </a>
       </header>
-      <div className="mt-2 py-5 pt-8  px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:shadow-[#0a0909] dark:bg-fuchsia-200/7">
+      <div className="mt-2 py-5 pt-8  px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out hover:shadow-[#0a0909] ">
         {resumeBioData.map((curr) => (
-          <div className="flex flex-col gap-2 text-[#fff]" key={curr.title}>
+          <div className="flex flex-col gap-2 text-[#dbd6d6]" key={curr.title}>
             <div className="flex gap-2.5">
-              <span>{curr.icon}</span>
-              <p>{curr.title}</p>
+              <span className="hover:rotate-10 transition ease-in-out">
+                {curr.icon}
+              </span>
+              <p className="uppercase">{curr.title}</p>
             </div>
             <p>{curr.description}</p>
           </div>
