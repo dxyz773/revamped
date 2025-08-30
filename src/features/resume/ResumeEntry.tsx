@@ -20,10 +20,10 @@ function ResumeEntryElement({ entry }: ResumeProps) {
     video,
   } = entry;
 
-  const hasThumbnailForSmScreen =
-    title.toLowerCase() === "petite leaf" ||
-    title.toLowerCase() === "camp retro" ||
-    title.toLowerCase() === "actor";
+  // const hasThumbnailForSmScreen =
+  //   title.toLowerCase() === "petite leaf" ||
+  //   title.toLowerCase() === "camp retro" ||
+  //   title.toLowerCase() === "actor";
 
   return (
     <div
@@ -115,7 +115,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
             loop={true}
           ></video>
         </div>
-      ) : video ? (
+      ) : video && isMobileDevice ? (
         <img src={img} className="mt-5 mb-5 dark:rounded-sm shadow-xl" />
       ) : null}
 
