@@ -4,7 +4,7 @@ const resumeBioData: ResumeBio = [
   {
     title: "Innovator",
     description:
-      "Analyzes problems from multiple angles and engineers thoughtful, original solutions. Excels at building systems from the ground up and consistently delivers effective results, no matter the complexity.",
+      "Analyzes problems from multiple angles and engineers thoughtful, original solutions from the ground up.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ const resumeBioData: ResumeBio = [
   {
     title: "Adaptable",
     description:
-      "Quick to learn new technologies and comfortable working across remote or in-person settings, with teams of any size. Seamlessly navigates both artistic and technical spaces to meet goals and drive projects forward.",
+      "Quick to learn new technologies. Seamlessly navigates artistic and technical spaces to drive projects forward.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const resumeBioData: ResumeBio = [
   {
     title: "Curious",
     description:
-      "Driven by a genuine desire to understand how things work under the hood. This curiosity fuels deep dives into new languages, tools, and frameworks.",
+      "Driven by a desire to understand how things work under the hood. Deep diver into new languages, and tech tools.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const resumeBioData: ResumeBio = [
   {
     title: "Versatile",
     description:
-      "Adept at independent problem-solving and team collaboration. Whether pairing with a teammate, contributing to code reviews, or focusing solo on a tough build, I adapt to what the task requires and show up ready to grow.",
+      "Adept at independent problem-solving and team collaboration. Adaptable to what the task requires and show up ready to grow.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const resumeBioData: ResumeBio = [
   {
     title: "User-Focused",
     description:
-      "Powered by insights in psychology, storytelling, and customer service, I build user interfaces that feel both natural and meaningful.",
+      "Constructor of interfaces that feel natural and meaningful. Powered by insights from psychology, storytelling, and customer service.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

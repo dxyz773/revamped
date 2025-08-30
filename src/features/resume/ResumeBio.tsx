@@ -7,7 +7,9 @@ function ResumeBio() {
       className="flex flex-col gap-4 scroll-m-24 mb-5 border-neutral-200 pt-10 lg:p-2 lg:pt-0"
     >
       <header className="uppercase px-8 tracking-wider font-stretch-expanded dark:font-[400] font-bold flex gap-4 items-center">
-        <span>About Me</span>
+        <span className="text-2xl font-light text-stone-300 text-shadow-white">
+          About Me
+        </span>
         <a
           href="/DemitryEdwardsResume.pdf"
           download="DemitryEdwardsResume"
@@ -28,10 +30,10 @@ function ResumeBio() {
         {resumeBioData.map((curr) => (
           <div className="flex flex-col gap-2 text-[#dbd6d6]" key={curr.title}>
             <div className="flex gap-2.5">
-              <span className="hover:rotate-10 transition ease-in-out">
+              <span className="hover:rotate-10 transition ease-in-out mt-1">
                 {curr.icon}
               </span>
-              <p className="uppercase">{curr.title}</p>
+              <p className="uppercase text-lg">{curr.title}</p>
             </div>
             <p>{curr.description}</p>
           </div>
