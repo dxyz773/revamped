@@ -1,6 +1,7 @@
 # Developer Portfolio
 
-<img width="1282" height="730" alt="portfolio_img" src="https://github.com/user-attachments/assets/c77f50b4-c109-41a9-be07-3729d1ac5a45" />
+
+<img width="1193" height="718" alt="newPortfolioImg" src="https://github.com/user-attachments/assets/9e8b236a-0e14-4279-b0c7-1219d83d45a8" />
 
 ## Table of Contents
 
@@ -11,7 +12,7 @@
 
 ## Overview
 
-Welcome to my web developer <a href="https://demitry-edwards.vercel.app/" target="_blank"> portfolio</a>. This is a responsive web application that showcases my personal projects, previous work, and volunteer experience. Built with modern web technologies, this portfolio highlights my technical and design skills through an interactive user interface.
+Welcome to my web developer <a href="https://www.demitryedwards.com/" target="_blank"> portfolio</a>. This is a responsive web application that showcases my personal projects, previous work, and volunteer experience. Built with modern web technologies, this portfolio highlights my technical and design skills through an interactive user interface.
 
 ## Tech Stack
 
