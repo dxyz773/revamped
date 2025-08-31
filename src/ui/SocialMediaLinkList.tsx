@@ -24,7 +24,7 @@ const socialMediaPlatforms: SocialMediaPlatform[] = [
 
 function SocialMediaLinkList() {
   return (
-    <ul className="flex gap-2 mt-18 items-end">
+    <ul className="flex gap-2 mt-28 items-end">
       {socialMediaPlatforms.map((platform) => (
         <SocialMediaLinkEl
           key={platform.name}

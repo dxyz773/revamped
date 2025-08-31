@@ -3,6 +3,7 @@ import { getResume } from "../../services/resumeAPI";
 import { Resume } from "./resumeTypes";
 import ResumeEntryElement from "./ResumeEntry";
 import Loader from "../../ui/Loader";
+import DownloadResumeLink from "./DownloadResumeLink";
 
 function ResumeList() {
   const [resume, setResume] = useState<Resume>([]);
@@ -50,16 +51,18 @@ function ResumeList() {
 
   if (isError) {
     return (
-      <div>
-        <p className="mb-2 dark:hover:bg-[#111827] px-8 py-5 rounded-md  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909]">
-          <span className="text-red-600">Error!</span> Failed to load resume
-          data. Please download resume via pdf link in
-          <a className="dark:hover:text-[#84cc16]" href="#about-me">
-            {" "}
-            About Me
-          </a>{" "}
-          section above.
-        </p>
+      <div className="mb-2  px-8 py-5 rounded-sm  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909] dark:hover:bg-zinc-500/10 ">
+        <span className="dark:text-red-600 uppercase text-xl font-extrabold tracking-wide">
+          Error!
+        </span>
+
+        <span className="ml-1"> Failed to load resume data.</span>
+        <div className="flex gap-2 items-center">
+          <p className="mt-4">Please download resume via PDF link.</p>
+          <div className="pt-4">
+            <DownloadResumeLink />
+          </div>
+        </div>
       </div>
     );
   }
@@ -73,7 +76,7 @@ function ResumeList() {
           className="flex flex-col scroll-m-24 gap-2 tracking-wide
            border-neutral-300 dark:border-neutral-800 mt-5 lg:p-2"
         >
-          <h2 className="tracking-wider font-stretch-expanded text-lg px-8 mb-5 dark:font-[400] font-bold text-fuchsia-50 uppercase">
+          <h2 className="tracking-wider font-stretch-expanded px-8 mb-5 text-2xl font-extrabold text-stone-200 text-shadow-black uppercase">
             {section}
           </h2>
           {resume
