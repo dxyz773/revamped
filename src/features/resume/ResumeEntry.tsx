@@ -27,24 +27,24 @@ function ResumeEntryElement({ entry }: ResumeProps) {
 
   return (
     <div
-      className={`mb-2  px-8 py-5 rounded-md  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909] dark:hover:bg-fuchsia-200/7 ${
-        isMobileDevice && "dark:bg-fuchsia-200/7"
+      className={`mb-2  px-8 py-5 rounded-sm  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909] dark:hover:bg-zinc-500/10 ${
+        isMobileDevice && "dark:bg-zinc-500/10"
       }`}
     >
-      <p className="text-sm uppercase mb-1 dark:text-neutral-200 pt-2">
-        {date}
-      </p>
+      <p className="text-sm uppercase mb-1 dark:text-[#a89b9b] pt-2">{date}</p>
 
       <div className="flex gap-2 flex-wrap">
-        <header className="dark:font-light text-xl  uppercase">{title}</header>
+        <header className="dark:font-extrabold text-lg uppercase dark:text-[#e9e5e5] tracking-wider">
+          {title}
+        </header>
         <div className="flex gap-2 items-end">
-          <p className="dark:text-fuchsia-50 text-md">{organization}</p>
+          <p className="dark:text-zinc-300 text-md">{organization}</p>
           <div className="flex gap-1 ">
             {github ? (
               <a
                 href={github}
                 target="_blank"
-                className="dark:fill-neutral-400 dark:hover:fill-[#84cc16] fill-[#000] hover:scale-90 dark:hover:scale-100"
+                className="dark:fill-[#a89b9b] dark:hover:fill-[#c7bfbf] hover:scale-90 dark:hover:scale-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
               <a
                 href={website}
                 target="_blank"
-                className="dark:fill-neutral-400 dark:hover:fill-[#84cc16] fill-[#000] hover:scale-90 dark:hover:scale-100"
+                className="dark:fill-[#a89b9b] dark:hover:fill-[#c7bfbf] hover:scale-90 dark:hover:scale-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,6 +94,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
           </div>
         </div>
       </div>
+
       {descriptor ? (
         <p className="text-sm dark:text-[#e5e5e5] mt-1 tracking-wider">
           {entry.descriptor}

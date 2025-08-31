@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { star, spaceShip } from "./NonPhosphorIcons";
+import { star, heart } from "./NonPhosphorIcons";
 
 function NonThemeIconToggle() {
   const [iconToggle, setIconToggle] = useState(true);
@@ -8,7 +8,7 @@ function NonThemeIconToggle() {
       className="absolute top-8 hover:rotate-[35deg] transition-all ease-in-out z-3"
       onClick={() => setIconToggle((curr) => !curr)}
     >
-      {iconToggle ? star : spaceShip}
+      {iconToggle ? star : heart}
     </button>
   );
 }
