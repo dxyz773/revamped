@@ -63,3 +63,24 @@ body {
   height: 100%;
   display: block;
 }
+
+.flush-text {
+  background: linear-gradient(90deg, #f8c7d8, #ff8fab, #ff6f61, #ffc371);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: flush 1.8s ease-out forwards;
+}
+
+@keyframes flush {
+  0% {
+    background-position: 0% 50%;
+    color: transparent;
+  }
+  100% {
+    background-position: 100% 50%;
+    color: transparent;
+  }
+}

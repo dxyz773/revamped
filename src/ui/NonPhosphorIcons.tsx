@@ -5,7 +5,7 @@ export const moon = (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="#8f7e7e"
-    className="size-6 hover:stroke-[#b1a5a5] transition-all ease-in-out"
+    className="size-6 hover:stroke-[#ba6565] transition-all ease-in-out"
   >
     <path
       strokeLinecap="round"
@@ -39,8 +39,8 @@ export const star = (
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth={1.5}
-    stroke="#8f7e7e"
-    className="size-6 hover:stroke-[#b1a5a5] transition-all ease-in-out"
+    stroke="#ba6565"
+    className="size-6 hover:stroke-[#ff6f61] transition-all ease-in-out"
   >
     <path
       strokeLinecap="round"
@@ -73,8 +73,8 @@ export const heart = (
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth={1.5}
-    stroke="#8f7e7e"
-    className="size-6 hover:stroke-[#b1a5a5] transition-all ease-in-out"
+    stroke="#ba6565"
+    className="size-6 hover:stroke-[#ff6f61] transition-all ease-in-out"
   >
     <path
       strokeLinecap="round"
