@@ -20,11 +20,6 @@ function ResumeEntryElement({ entry }: ResumeProps) {
     video,
   } = entry;
 
-  // const hasThumbnailForSmScreen =
-  //   title.toLowerCase() === "petite leaf" ||
-  //   title.toLowerCase() === "camp retro" ||
-  //   title.toLowerCase() === "actor";
-
   return (
     <div
       className={`mb-2  px-8 py-5 rounded-sm  hover:transition-all dark:ease-in-out dark:hover:shadow-xl hover:shadow-md hover:shadow-neutral-600 dark:hover:shadow-[#0a0909] dark:hover:bg-zinc-500/10 ${
@@ -44,7 +39,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
               <a
                 href={github}
                 target="_blank"
-                className="dark:fill-[#a89b9b] dark:hover:fill-[#c7bfbf] hover:scale-90 dark:hover:scale-100"
+                className="dark:fill-[#ff8c81] dark:hover:fill-[#ff6f61] hover:scale-90 dark:hover:scale-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

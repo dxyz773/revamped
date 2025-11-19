@@ -7,7 +7,7 @@ function SocialMediaLinkEl({ url, name }: PropTypes) {
         <a
           href={url}
           target="_blank"
-          className="dark:fill-[#8f7e7e] dark:hover:fill-[#a89b9b]"
+          className="dark:fill-[#ff8c81] dark:hover:fill-[#ff6f61]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ function SocialMediaLinkEl({ url, name }: PropTypes) {
         <a
           href={url}
           target="_blank"
-          className="dark:fill-[#8f7e7e] dark:hover:fill-[#a89b9b]"
+          className="dark:fill-[#ff8c81] dark:hover:fill-[#ff6f61]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ function SocialMediaLinkEl({ url, name }: PropTypes) {
         <a
           href={url}
           target="_blank"
-          className="dark:fill-[#8f7e7e] dark:hover:fill-[#a89b9b]"
+          className="dark:fill-[#ff8c81] dark:hover:fill-[#ff6f61]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ function SocialMediaLinkEl({ url, name }: PropTypes) {
         <a
           href={url}
           target="_blank"
-          className="dark:fill-[#8f7e7e] dark:hover:fill-[#a89b9b]"
+          className="dark:fill-[#ff8c81] dark:hover:fill-[#ff6f61]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ function SocialMediaLinkEl({ url, name }: PropTypes) {
       <a
         href={url}
         target="_blank"
-        className="dark:fill-[#8f7e7e] dark:hover:fill-[#a89b9b]"
+        className="dark:fill-[#ff8c81] dark:hover:fill-[#ff6f61]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
