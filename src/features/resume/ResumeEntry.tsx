@@ -95,7 +95,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
 
       {img &&
         (title === "Mind Matters" ||
-          title === "Software Engineering Certification" ||
+          title === "Software Engineering" ||
           title === "Smash or Trash") && (
           <img className="mt-5 mb-5" src={img}></img>
         )}
