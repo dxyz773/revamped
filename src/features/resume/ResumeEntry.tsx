@@ -19,6 +19,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
     img,
     video,
     techStack,
+    logo,
   } = entry;
 
   return (
@@ -33,9 +34,16 @@ function ResumeEntryElement({ entry }: ResumeProps) {
 
       <div>
         <div className="flex gap-2 items-center">
-          <header className="dark:font-extrabold sm:text-3xl font-semibold  uppercase dark:text-[#fdfdf9] tracking-widest bebas-neue-regular">
-            {title}
-          </header>
+          <div className="flex gap-2 items-end mb-2 mt-2">
+            {logo && (
+              <p className="w-8 h-8 rounded-full border p-1">
+                <img src={logo} className="rounded-full" />
+              </p>
+            )}
+            <header className="dark:font-extrabold text-xl sm:text-2xl font-semibold  uppercase dark:text-[#fdfdf9] tracking-widest bebas-neue-regular">
+              {title}
+            </header>
+          </div>
           <div className="flex gap-1">
             {github ? (
               <a

@@ -13,6 +13,7 @@ export type ResumeEntry = {
   video: string;
   order: number;
   techStack: string[];
+  logo: string;
 };
 
 export type Resume = ResumeEntry[];

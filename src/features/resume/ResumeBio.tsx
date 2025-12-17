@@ -1,5 +1,4 @@
 import DownloadResumeLink from "./DownloadResumeLink";
-import resumeBioData from "./ResumeBioData";
 
 function ResumeBio() {
   return (
@@ -14,21 +13,24 @@ function ResumeBio() {
         <DownloadResumeLink />
       </header>
       <div className="mt-2 py-5 pt-8  px-8 flex flex-col gap-8 tracking-wider leading-7 rounded-md dark:hover:shadow-lg dark:hover:transition-all dark:ease-in-out  hover:shadow-neutral-600 dark:hover:shadow-[#0a0909] dark:bg-zinc-500/10 ">
-        {resumeBioData.map((curr) => (
-          <div className="flex flex-col gap-2 text-[#f4f2f2]" key={curr.title}>
-            <div className="flex gap-2.5">
-              <span className="hover:rotate-10 transition ease-in-out mt-1">
-                {curr.icon}
-              </span>
-              <p className="uppercase text-lg text-[#cdc5c5] font-extrabold text-shadow-black">
-                {curr.title}
-              </p>
-            </div>
-            <p className="text-[#fefefe] text-shadow-black">
-              {curr.description}
-            </p>
-          </div>
-        ))}
+        <blockquote>
+          I am a multidisciplinary technologist with over a decade of experience
+          working in people-centered, fast-paced environments. Understanding how
+          individuals and communities connect has always been at the heart of my
+          work. With a foundation in psychology and years spent across
+          entertainment, customer-facing roles, and operations, I bring a
+          thoughtful, human-first perspective to the way I approach technology
+          and problem-solving.
+        </blockquote>
+        <blockquote>
+          Since 2023, I’ve been actively developing web applications using
+          modern JavaScript frameworks and tooling, focusing on clarity,
+          maintainability, and intentional technical execution. I’m driven to
+          create technology that improves people’s lives, strengthens
+          communities, and feels genuinely beautiful to use—especially as
+          emerging tools like AI continue to reshape how we interact with and
+          build digital experiences.
+        </blockquote>
       </div>
     </section>
   );
