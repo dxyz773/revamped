@@ -3,7 +3,7 @@ function DownloadResumeLink() {
     <a
       href="/DemitryEdwardsResume.pdf"
       download="DemitryEdwardsResume"
-      className="dark:hover:fill-[#ff6f61] dark:fill-[#a89b9b] hover:scale-90 dark:hover:scale-100"
+      className="dark:fill-[#ff8c81] dark:hover:fill-[#ff6f61] hover:scale-90 dark:hover:scale-100"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

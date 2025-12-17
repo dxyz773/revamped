@@ -7,8 +7,8 @@ function ResumeBio() {
       id="about-me"
       className="flex flex-col gap-4 scroll-m-24 mb-5 border-neutral-200 pt-10 lg:p-2 lg:pt-0"
     >
-      <header className="uppercase px-8 tracking-wider font-stretch-expanded dark:font-[400] font-bold flex gap-4 items-center">
-        <span className="text-2xl font-extrabold text-stone-200 text-shadow-black">
+      <header className="uppercase px-8 tracking-widest font-stretch-expanded dark:font-[400] font-bold flex gap-4 items-center">
+        <span className="text-2xl font-extrabold dark:text-[#fdfdf9] text-shadow-black bebas-neue-regular">
           About Me
         </span>
         <DownloadResumeLink />
