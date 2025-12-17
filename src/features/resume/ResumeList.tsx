@@ -76,7 +76,7 @@ function ResumeList() {
           className="flex flex-col scroll-m-24 gap-2 tracking-wide
            border-neutral-300 dark:border-neutral-800 mt-5 lg:p-2"
         >
-          <h2 className="tracking-wider font-stretch-expanded px-8 mb-5 text-2xl font-extrabold text-stone-200 text-shadow-black uppercase">
+          <h2 className="tracking-widest font-stretch-expanded px-8 mb-5 text-2xl font-extrabold text-stone-200 text-shadow-black uppercase bebas-neue-regular flush-text">
             {section}
           </h2>
           {resume

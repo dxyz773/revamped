@@ -18,6 +18,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
     website,
     img,
     video,
+    techStack,
   } = entry;
 
   return (
@@ -26,15 +27,16 @@ function ResumeEntryElement({ entry }: ResumeProps) {
         isMobileDevice && "dark:bg-zinc-500/10"
       }`}
     >
-      <p className="text-sm uppercase mb-1 dark:text-[#a89b9b] pt-2">{date}</p>
+      <p className="text-sm uppercase mb-1 dark:text-[#a89b9b] pt-2 items-end">
+        {date}
+      </p>
 
-      <div className="flex gap-2 flex-wrap">
-        <header className="dark:font-extrabold text-lg uppercase dark:text-[#e9e5e5] tracking-wider">
-          {title}
-        </header>
-        <div className="flex gap-2 items-end">
-          <p className="dark:text-zinc-300 text-md">{organization}</p>
-          <div className="flex gap-1 ">
+      <div>
+        <div className="flex gap-2 items-center">
+          <header className="dark:font-extrabold sm:text-3xl font-semibold  uppercase dark:text-[#fdfdf9] tracking-widest bebas-neue-regular">
+            {title}
+          </header>
+          <div className="flex gap-1">
             {github ? (
               <a
                 href={github}
@@ -56,7 +58,7 @@ function ResumeEntryElement({ entry }: ResumeProps) {
               <a
                 href={website}
                 target="_blank"
-                className="dark:fill-[#a89b9b] dark:hover:fill-[#c7bfbf] hover:scale-90 dark:hover:scale-100"
+                className="dark:fill-[#ff8c81] dark:hover:fill-[#ff6f61] hover:scale-90 dark:hover:scale-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -69,36 +71,25 @@ function ResumeEntryElement({ entry }: ResumeProps) {
                 </svg>
               </a>
             ) : null}
-            {/* {!hasThumbnailForSmScreen && img ? (
-              <a
-                href={img}
-                target="_blank"
-                className="dark:fill-neutral-400 dark:hover:fill-[#84cc16] fill-[#000] hover:scale-90 dark:hover:scale-100"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="inherit"
-                  viewBox="0 0 256 256"
-                >
-                  <path d="M216,42H40A14,14,0,0,0,26,56V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A14,14,0,0,0,216,42ZM40,54H216a2,2,0,0,1,2,2V163.57L188.53,134.1a14,14,0,0,0-19.8,0l-21.42,21.42L101.9,110.1a14,14,0,0,0-19.8,0L38,154.2V56A2,2,0,0,1,40,54ZM38,200V171.17l52.58-52.58a2,2,0,0,1,2.84,0L176.83,202H40A2,2,0,0,1,38,200Zm178,2H193.8l-38-38,21.41-21.42a2,2,0,0,1,2.83,0l38,38V200A2,2,0,0,1,216,202ZM146,100a10,10,0,1,1,10,10A10,10,0,0,1,146,100Z"></path>
-                </svg>
-              </a>
-            ) : null} */}
           </div>
+        </div>
+        <div>
+          {descriptor ? (
+            <p className="text-sm dark:text-[#fdfdf9] mt-1 tracking-wider">
+              {entry.descriptor}
+            </p>
+          ) : null}
+          {organization && (
+            <p className="dark:text-zinc-300 text-md">{organization}</p>
+          )}
         </div>
       </div>
 
-      {descriptor ? (
-        <p className="text-sm dark:text-[#e5e5e5] mt-1 tracking-wider">
-          {entry.descriptor}
-        </p>
-      ) : null}
       {img &&
         (title === "Mind Matters" ||
-          title === "Software Engineering Certification") && (
-          <img className="mt-5 mb-5 " src={img}></img>
+          title === "Software Engineering Certification" ||
+          title === "Smash or Trash") && (
+          <img className="mt-5 mb-5" src={img}></img>
         )}
       {video && !isMobileDevice ? (
         <div className="flex">
@@ -116,8 +107,22 @@ function ResumeEntryElement({ entry }: ResumeProps) {
       ) : null}
 
       {textContent ? (
-        <p className="mt-4 tracking-wider leading-7">{entry.textContent}</p>
+        <p className="mt-4 tracking-wider leading-7 dark:text-[#fdfdf9]">
+          {entry.textContent}
+        </p>
       ) : null}
+      {techStack && (
+        <ul className="flex gap-2 capitalize shrink flex-wrap mt-4">
+          {techStack.map((tech) => (
+            <li
+              className="bg-[#ff6f61] text-black flex items-center rounded-md  px-3 text-xs tracking-wider font-medium shadow-2xl shadow-black border border-black "
+              key={tech}
+            >
+              {tech}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
