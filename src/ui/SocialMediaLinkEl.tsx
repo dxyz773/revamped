@@ -11,8 +11,8 @@ function SocialMediaLinkEl({ url, name }: PropTypes) {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
+            width="26"
+            height="26"
             fill="inherit"
             viewBox="0 0 256 256"
           >
@@ -32,8 +32,8 @@ function SocialMediaLinkEl({ url, name }: PropTypes) {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
+            width="26"
+            height="26"
             fill="inherit"
             viewBox="0 0 256 256"
           >
@@ -54,8 +54,8 @@ function SocialMediaLinkEl({ url, name }: PropTypes) {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
+            width="26"
+            height="26"
             fill="inherit"
             viewBox="0 0 256 256"
           >
@@ -75,8 +75,8 @@ function SocialMediaLinkEl({ url, name }: PropTypes) {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
+            width="26"
+            height="26"
             fill="inherit"
             viewBox="0 0 256 256"
           >
@@ -95,8 +95,8 @@ function SocialMediaLinkEl({ url, name }: PropTypes) {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
+          width="26"
+          height="26"
           fill="inherit"
           viewBox="0 0 256 256"
         >
