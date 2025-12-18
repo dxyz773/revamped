@@ -1,7 +1,6 @@
 # Developer Portfolio
 
-
-<img width="1221" height="727" alt="porfolio_img_2025" src="https://github.com/user-attachments/assets/6030cb64-8ba1-45b5-9df5-88aa66ed418e" />
+<img width="1233" height="713" alt="updatedResumeImg12_18_2025" src="https://github.com/user-attachments/assets/3649ddbc-b67e-45ab-9508-3d1f4550e597" />
 
 ## Table of Contents
 
