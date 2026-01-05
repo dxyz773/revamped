@@ -1,7 +1,7 @@
 function DownloadResumeLink() {
   return (
     <a
-      href="/DemitryEdwardsResume.pdf"
+      href="/DemitryEdwardsSoftwareEngineerResume.pdf"
       download="DemitryEdwardsResume"
       className="dark:fill-[#ff8c81] dark:hover:fill-[#ff6f61] hover:scale-90 dark:hover:scale-100"
     >
