@@ -8,7 +8,7 @@ type SocialMediaPlatform = {
 const socialMediaPlatforms: SocialMediaPlatform[] = [
   {
     name: "github",
-    url: "https://github.com/dxyz773",
+    url: "https://github.com/demitryedwards",
   },
   { name: "medium", url: "https://medium.com/@dxyz773" },
   {
